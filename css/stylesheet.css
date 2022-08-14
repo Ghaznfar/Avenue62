@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: Raleway-Regular;
+
+}
+@font-face {
+    font-family: Raleway-Regular;
+    src: url(../fonts/Raleway-Regular.ttf);
+  }
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: Raleway-Medium;
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+  
+a:hover {
+    text-decoration: none;
+}
+/********************** Header ****************/
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 30px;
+}
+.nav-item a{
+    color: #000000;
+    font-size: 16px;
+}
+.nav-item .skin_med_shop{
+    background-color: #FFC0CB;
+    color: #fff;
+    font-family: Raleway-SemiBold;
+}
+.banner{
+    width: 100%;
+    position: relative;
+    float: left;
+    background: url(../img/banner.png);
+    padding: 30px 0;
+}
+.bannerbtn{
+    width: 100%;
+    float: left;
+}
+.fixedbutton{
+    width: 100%;
+    float: right;
+}
+.fixedbutton ul{
+    list-style: none;
+    text-align: right;
+}
+.fixedbutton ul li a{
+    background: #000000;
+    color: #fff;
+    padding: 10px 30px;
+}
+.welcomeav62{
+    width: 100%;
+    float: left;
+}
+.welcomeav62 h2{
+    background: #FFC0CB;
+    opacity: 0.7215686274509804;
+    display: table;
+    padding: 30px 50px;
+    font-size: 30px;
+    line-height: 45px;
+    color: #211C14;
+    font-family: Raleway-Medium;
+}
+
+/********************** Footer ****************/
+.footer{
+    width: 100%;
+    float: left;
+    background-color: #000000;
+    padding: 20px 0 10px 0;
+    color: #f4f4f5;
+    font-size: 12px;
+}
+.ftnav{
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+.ftnav ul{
+    list-style: none;
+}
+.ftnav ul li{
+    display: inline-block;
+}
+.ftnav ul li a{
+    color: #f4f4f5;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */ 
+    .pagination-lg .page-link {
+        font-size: 12px;
+    }
+.dropdown_design{
+    width: 100%;
+}
+.wishlist{
+    width: 100%;
+}
+.product-items {
+    padding: 0;
+}
+.footer{
+    text-align: center;
+}
+.lovelivedigit{
+    width: 100%;
+    text-align: center;
+}
+.lovelivetxt{
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+.header{
+    padding-bottom: 30px;
+}
+.mt-20{
+    padding-top: 30px;
+}
+
+  }
+
+  @media only screen and (max-width: 330px) {
+    /* For mobile phones: */ 
+    .pagination-lg .page-link {
+        font-size: 10px;
+    }
+    .tshirtimg img{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 280px) {
+  /* For mobile phones: */ 
+  .pagination-lg .page-link {
+      font-size: 9px;
+  }
+}
+
