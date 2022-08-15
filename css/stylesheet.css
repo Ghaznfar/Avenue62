@@ -20,21 +20,32 @@
     font-family: Raleway-Medium;
     src: url(../fonts/Raleway-Medium.ttf);
 }
+@font-face {
+    font-family: Raleway-Bold;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
   
 a:hover {
     text-decoration: none;
 }
 /********************** Header ****************/
+.header{
+    width: 100%;
+    float: left;
+    padding: 15px 0;
+}
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 10px 30px;
+    padding: 12px 20px;
 }
 .nav-item a{
     color: #000000;
     font-size: 16px;
 }
 .nav-item .skin_med_shop{
-    background-color: #FFC0CB;
-    color: #fff;
+    background-color: #e6c2c3;
+    color: #fff !important;
+    display: block;
+    padding: 18px 50px !important;
     font-family: Raleway-SemiBold;
 }
 .banner{
@@ -42,38 +53,167 @@ a:hover {
     position: relative;
     float: left;
     background: url(../img/banner.png);
+    background-size: cover;
     padding: 30px 0;
 }
 .bannerbtn{
     width: 100%;
     float: left;
+    display: table;
 }
 .fixedbutton{
-    width: 100%;
     float: right;
+    position: fixed;
+    right: 9%;
+    display: none;
+    z-index: 99;
+}
+.navbar{
+    padding: 0;
 }
 .fixedbutton ul{
     list-style: none;
-    text-align: right;
+    float: right;
+}
+.fixedbutton ul li{
+    padding-top: 10px;
 }
 .fixedbutton ul li a{
-    background: #000000;
     color: #fff;
-    padding: 10px 30px;
+    width: 245px;
+    height: 60px;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    font-family: Raleway-Bold;
+}
+.afsp{
+    font-size: 10px;
+}
+.color_pink{
+    background: #d4989a;
+}
+.color_black{
+    background: #000000;
+}
+.color_green{
+    background: #1fa600;
+}
+.fa-whatsapp{
+    position: relative;
+    top: 6px;
+    right: 4px;
+}
+.prijs{
+    position: relative;
+    top: 8px;
 }
 .welcomeav62{
     width: 100%;
     float: left;
+    padding-top: 300px;
+    padding-bottom: 100px;
+
 }
 .welcomeav62 h2{
-    background: #FFC0CB;
-    opacity: 0.7215686274509804;
+    background: #d4989a;
+    opacity: 0.72;
     display: table;
     padding: 30px 50px;
     font-size: 30px;
     line-height: 45px;
-    color: #211C14;
+    color: #000;
     font-family: Raleway-Medium;
+    z-index: 9;
+}
+
+/********************** Onze Behandelingen (Product Section) ****************/
+.productSection{
+    width: 100%;
+    float: left;
+    padding: 50px 0;
+}
+.onze{
+    font-family: Raleway-Medium;
+    color: #010101;
+    font-size: 24px;
+    text-align: center;
+}
+
+.row_container {
+    display: flex; /* equal height of the children */
+    padding-top: 20px;
+    text-align: center;
+  }
+  .productItem {
+    flex: 1; /* additionally, equal width */
+    margin: 10px;
+  }
+  .row_container p{
+    padding-top: 20px;
+  }
+  .productItem img{
+    width: 100%;
+    filter: grayscale(1);
+  }
+  .productItem img:hover{
+    filter: none;
+  }
+ .productItem ul {
+    display: flex;
+    }
+.productItem li{
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+    background-color: #d4989a;
+    padding: 8px 15px;
+    margin: 2px;
+    cursor: pointer;
+}
+.font_color{
+    color: #fff;
+    font-size: 22px;
+    height: 22px;
+}
+.whatsappicon{
+    position: relative;
+    top: 2px;
+}
+[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+  }
+  [data-tooltip]:before {    
+    content: attr(data-tooltip);
+    position: absolute;
+    opacity: 0;
+    width: 50px;
+    transform: translateX(-42%);
+    bottom: 33px;
+    padding: 0.5em;
+    background-color: black;
+    border-radius: 0.25em;
+    color: #fff;
+    text-align: center;
+    transition: 0.2s;
+    font-size: 10px;
+    font-family: Raleway-SemiBold;
+}
+[data-tooltip]:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    top: -14px;
+    margin-left: -10px;
+    border: 5px solid black;
+    border-color: black transparent transparent transparent;
+    transition: 0.2s;
+}
+  [data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  opacity: 1; 
 }
 
 /********************** Footer ****************/
