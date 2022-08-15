@@ -24,6 +24,10 @@
     font-family: Raleway-Bold;
     src: url(../fonts/Raleway-Bold.ttf);
 }
+@font-face {
+    font-family: Raleway-Light;
+    src: url(../fonts/Raleway-Light.ttf);
+}
   
 a:hover {
     text-decoration: none;
@@ -65,7 +69,6 @@ a:hover {
     float: right;
     position: fixed;
     right: 9%;
-    display: none;
     z-index: 99;
 }
 .navbar{
@@ -162,6 +165,8 @@ a:hover {
   }
  .productItem ul {
     display: flex;
+    padding: 0;
+    margin: 0;
     }
 .productItem li{
     flex-grow: 1;
@@ -215,6 +220,93 @@ a:hover {
 [data-tooltip]:hover:after {
   opacity: 1; 
 }
+.activeProduct{
+    border: 3px solid #d4989a;
+}
+.activeProduct h2{
+    font-family: Raleway-Bold;
+    color: #000;
+    font-size: 30px;
+    padding: 10px 0;
+    background-color: #d4989a;
+}
+.activeProduct h1{
+    font-family: Raleway-Bold;
+    color: #000;
+    font-size:40px;
+    padding: 0;
+    margin: 0;
+}
+.two_one{
+    font-size: 50px;
+    font-family: Raleway-Bold;
+}
+.activeImg{
+    height: 100px;
+}
+.activeProduct img{
+    width: 100px;
+}
+/********************** Invest your skin ****************/
+.investInYourSkin{
+    width: 100%;
+    float: left;
+    background: #000;
+    padding: 30px 0;
+    text-align: center;
+}
+.investInYourSkin h1{
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    font-family: Raleway-Light;
+}
+/********************** Who Are We ****************/
+.whoAreWe{
+    width: 100%;
+    float: left;
+    background: #d4989a;
+    padding: 50px 0;
+}
+.teamtxt{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.teamtxt h1{
+    font-family: Raleway-Medium;
+    font-size: 24px;
+    color: #010101;
+    padding-top: 30px;
+}
+.teamtxt p{
+    font-family: Raleway-Regular;
+    font-size: 17px;
+    line-height: 27px;
+    color: #fff;
+    display: block;
+    padding: 35px 7%;
+}
+.teamsMember{
+    display: flex; /* equal height of the children */
+    padding-top: 20px;
+    text-align: center;
+    clear: both;
+}
+.teampic{  
+    flex: 1; /* additionally, equal width */
+    margin: 10px; 
+}
+.teampic p{
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: Raleway-Regular;
+    color: #000;
+}
+.estArts{
+    color: #fff;
+}
 
 /********************** Footer ****************/
 .footer{
@@ -240,53 +332,17 @@ a:hover {
     color: #f4f4f5;
 }
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */ 
-    .pagination-lg .page-link {
-        font-size: 12px;
-    }
-.dropdown_design{
-    width: 100%;
-}
-.wishlist{
-    width: 100%;
-}
-.product-items {
-    padding: 0;
-}
 .footer{
     text-align: center;
 }
-.lovelivedigit{
-    width: 100%;
-    text-align: center;
-}
-.lovelivetxt{
-    width: 100%;
-    padding-top: 20px;
-    text-align: center;
-}
-.header{
-    padding-bottom: 30px;
-}
-.mt-20{
-    padding-top: 30px;
+.row_container {
+    display: block;
 }
 
   }
 
-  @media only screen and (max-width: 330px) {
-    /* For mobile phones: */ 
-    .pagination-lg .page-link {
-        font-size: 10px;
-    }
-    .tshirtimg img{
-        width: 100%;
-    }
+@media only screen and (max-width: 330px) {
 }
 @media only screen and (max-width: 280px) {
-  /* For mobile phones: */ 
-  .pagination-lg .page-link {
-      font-size: 9px;
-  }
 }
 
