@@ -36,10 +36,10 @@ a:hover {
 .header{
     width: 100%;
     float: left;
-    padding: 15px 0;
+    padding: 25px 0;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 12px 20px;
+    padding: 18px 20px;
 }
 .nav-item a{
     color: #000000;
@@ -61,15 +61,20 @@ a:hover {
     padding: 30px 0;
 }
 .bannerbtn{
-    width: 100%;
+    position: relative;
     float: left;
-    display: table;
+    width: 100%;
 }
 .fixedbutton{
-    float: right;
+    position: absolute;
+    right: 0;
+}
+.fixedbuttonfixed{
     position: fixed;
-    right: 9%;
-    z-index: 99;
+    z-index: 999;
+}
+.cont_space{
+    padding-right: 50px;
 }
 .navbar{
     padding: 0;
@@ -81,9 +86,12 @@ a:hover {
 .fixedbutton ul li{
     padding-top: 10px;
 }
+.position_relative{
+    position: relative;
+}
 .fixedbutton ul li a{
     color: #fff;
-    width: 245px;
+    width: 243px;
     height: 60px;
     display: block;
     padding: 10px 0;
@@ -159,6 +167,7 @@ a:hover {
   .productItem img{
     width: 100%;
     filter: grayscale(1);
+    cursor: pointer;
   }
   .productItem img:hover{
     filter: none;
@@ -198,7 +207,7 @@ a:hover {
     transform: translateX(-42%);
     bottom: 33px;
     padding: 0.5em;
-    background-color: black;
+    background-color: #1d1d1b;
     border-radius: 0.25em;
     color: #fff;
     text-align: center;
@@ -212,8 +221,8 @@ a:hover {
     opacity: 0;
     top: -14px;
     margin-left: -10px;
-    border: 5px solid black;
-    border-color: black transparent transparent transparent;
+    border: 5px solid #1d1d1b;
+    border-color: #1d1d1b transparent transparent transparent;
     transition: 0.2s;
 }
   [data-tooltip]:hover:before,
@@ -247,6 +256,13 @@ a:hover {
 .activeProduct img{
     width: 100px;
 }
+.skinmedi{
+    width: 100%;
+    float: left;
+}
+.skinmedi img{
+    filter: none;
+}
 /********************** Invest your skin ****************/
 .investInYourSkin{
     width: 100%;
@@ -266,7 +282,7 @@ a:hover {
 .whoAreWe{
     width: 100%;
     float: left;
-    background: #d4989a;
+    background: #e6c2c3;
     padding: 50px 0;
 }
 .teamtxt{
@@ -304,12 +320,51 @@ a:hover {
     font-family: Raleway-Regular;
     color: #000;
 }
+.teampic img{
+    filter: grayscale(1);
+}
+.teampic img:hover{
+    filter: none;
+}
 .estArts{
     color: #fff;
 }
 
 /********************** Footer ****************/
 .footer{
+    width: 100%;
+    float: left;
+    padding: 15px 0;
+}
+.navbtm{
+    width: 100%;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbtm ul li{
+    display: block;
+    padding-top: 15px;
+}
+.navbtm ul li a{
+    color: #000000;
+    font-size: 14px;
+    font-family: Raleway-Regular;
+}
+.whatsappicon2 {
+    position: relative;
+    top: 0px;
+    left: -1px;
+    font-size: 18px;
+}
+.navbtm_logo{
+    width: 100%;
+    float: right;
+    padding-top: 70px;
+    text-align: right;
+}
+/********************** redbit ****************/
+.redbit{
     width: 100%;
     float: left;
     background-color: #000000;
@@ -331,18 +386,103 @@ a:hover {
 .ftnav ul li a{
     color: #f4f4f5;
 }
+.contact{
+    width: 100%;
+    float: left;
+    padding: 50px 0;
+}
+.contacttxt{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.contacttxt h1{
+    color: #010101;
+    font-size: 19px;
+    font-family: Raleway-Medium;
+}
+.contacttxt p{
+    color: #000000;
+    font-size: 14px;
+    line-height: 25px;
+    padding-top: 40px;
+    font-family: Raleway-Regular;
+}
+.contacttxt a{
+    color: #000000;
+    font-size: 14px;
+}
+.callus{
+    top: 45px;
+    position: relative;
+    background: #e6c2c3;
+    color: #000;
+    font-size: 18px;
+    font-family: Raleway-Bold;
+    padding: 12px 20px;
+}
+.addMap{
+    width: 100%;
+    float: left;
+    cursor: pointer;
+}
+.addMap img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1025px) {
+    .productItem li{
+        padding: 8px 7px;
+    }
+}
+@media only screen and (max-width: 998px) {
+    .teampic{
+        margin: 1px;
+    }
+}
 @media only screen and (max-width: 768px) {
-.footer{
+.redbit{
     text-align: center;
 }
 .row_container {
     display: block;
 }
-
+.teamsMember{
+    display: block;
+}
+.navbtm_logo{
+    text-align: left;
+    padding-top: 15px;
+}
   }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 480px) {
+.fixedbutton {
+    float: left;
+    position: relative;
+    left: 0;
+    z-index: 99;
 }
-@media only screen and (max-width: 280px) {
+.welcomeav62 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.banner{
+    background-size: contain;
+}
+.welcomeav62 h2 {
+    background: #d4989a;
+    opacity: 0.72;
+    display: table;
+    padding: 30px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000;
+    font-family: Raleway-Medium;
+    z-index: 9;
+}
+.contacttxt {
+    padding-bottom: 30px;
+}
 }
 
